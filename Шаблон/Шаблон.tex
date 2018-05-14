@@ -1,0 +1,128 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{graphicx}
+\usepackage[hcentering, bindingoffset = 10mm, right = 13 mm, left = 13 mm, top=20mm, bottom = 20 mm]{geometry}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage{amsmath, amstext}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{mathrsfs}
+\usepackage{adjustbox}
+\usepackage{enumerate, indentfirst, float}
+\usepackage{capt-of, svg}
+\usepackage{icomma}
+\usepackage{xcolor}
+\usepackage{ctable}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{expl3}
+\usepackage{calc}
+
+
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+ 
+\begin{document}
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Московский физико-технический институт\\(государственный университет)}\\[1,5cm] % Name of your university/college
+\textsc{\Large Департамент молекулярной и биологической физики}\\[2cm] % Major heading such as course name
+\textsc{\large Лабораторная работа}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule
+\\[0.4cm]
+{ \huge \bfseries YOUR TITLE}
+\\[0.2cm] % Title of your document
+\HRule
+\\[1.5cm]
+
+
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+\begin{minipage}{0.4\textwidth}
+	\begin{flushleft}		
+	\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+	\begin{flushright} \large
+		\emph{Авторы:}\\
+		Светлана \textsc{Фролова} \\
+		6113 группа \\
+		Анатолий \textsc{Киселёв} \\
+		6113 группа
+	\end{flushright}
+\end{minipage}
+
+
+\begin{bottompar}
+	\begin{center}
+		\includegraphics[width = 80 mm]{logo.jpg}
+	\end{center}
+	{\large г. Долгопрудный\\2018 г.}
+
+\end{bottompar}
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\setcounter{page}{2}
+
+\newpage
+\section{Цели работы}
+	\begin{enumerate}
+	
+		\item 
+		
+		\item 
+		
+		\item 
+	
+	\end{enumerate}
+	
+\section{Теоретическая часть}
+
+
+\newpage
+\section{Обработка результатов}
+
+
+\begin{figure}[h]
+	\centering
+	\caption{}
+%	\includegraphics[width=1\textwidth]{.png}
+\end{figure}
+\newpage
+
+\begin{figure}[t]
+	\centering
+	\caption{}
+%	\includegraphics[width=1\textwidth]{.png}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\caption{}
+%	\includegraphics[width=1\textwidth]{.png}
+\end{figure}
+
+\newpage
+\section{Вывод}
+\end{document}

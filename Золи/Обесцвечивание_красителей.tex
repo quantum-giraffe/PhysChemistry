@@ -17,11 +17,7 @@
 \usepackage{icomma}
 \usepackage{xcolor}
 \usepackage{ctable}
-\usepackage{amssymb}
-\usepackage[version=4]{mhchem}
-\usepackage{expl3}
-\usepackage{calc}
-
+\usepackage{multirow}
 
 \newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
  
@@ -36,7 +32,7 @@
 %	HEADING SECTIONS
 %----------------------------------------------------------------------------------------
 
-\textsc{\LARGE Московский физико-технический институт\\(государственный университет)}\\[1,5cm] % Name of your university/college
+\textsc{\LARGE Московский Физико-Технический Институт}\\[1,5cm] % Name of your university/college
 \textsc{\Large Департамент молекулярной и биологической физики}\\[2cm] % Major heading such as course name
 \textsc{\large Лабораторная работа}\\[0.5cm] % Minor heading such as course title
 
@@ -46,7 +42,7 @@
 
 \HRule
 \\[0.4cm]
-{ \huge \bfseries Кинетика обесцвечивания красителя \\ в щелочной среде}
+{ \huge \bfseries Кинетика обесцвечивания красителя \\в щелочной среде}
 \\[0.2cm] % Title of your document
 \HRule
 \\[1.5cm]
@@ -76,20 +72,18 @@
 	\begin{center}
 		\includegraphics[width = 80 mm]{logo.jpg}
 	\end{center}
-	{\large г. Долгопрудный\\2018 г.}
+	{\large \today}
 
 \end{bottompar}
 \vfill % Fill the rest of the page with whitespace
 
 \end{titlepage}
 
-\setcounter{page}{2}
-
 \newpage
 \section{Цели работы}
 	\begin{enumerate}
 	
-		\item Определить порядок реакции по фенолфталеину и по \ce{NaOH};
+		\item Определить порядок реакции по фенолфталеину и по NaOH;
 		
 		\item Рассчитать константу скорости реакции;
 		
@@ -105,17 +99,15 @@
 пропорциональную зависимость между концентрацией поглощающего вещества $C$ и
 измеряемой оптической плотностью при заданной длине волны излучения $\lambda$:
 
-\begin{equation}\label{Buger}
-D=\lg{\frac{I}{I_0}}=\varepsilon_\lambda Cl
-\end{equation}
 
+\[D=\lg{\frac{I}{I_0}}=\varepsilon_\lambda Cl,\]
 где $D$ - оптическая плотность; $I_0$ – интенсивность падающего света; $I$ – интенсивность
 света, прошедшего через образец; $C$ – концентрация вещества; $l$ – толщина
 поглощающего слоя; $\varepsilon_\lambda$ – коэффициент молярной экстинкции при длине волны $\lambda$. В
 данном случае он совпадает с коэффициентом поглощения, хотя в общем случае
-учитывается также процесс ослабления света из-за рассеяния $\varepsilon_\lambda = \varepsilon_{\lambda,abs} + \varepsilon_{\lambda,scatt}.$
+учитывается также процесс ослабления света из-за рассеяния $\varepsilon_\lambda = \varepsilon_{\lambda,abs} + \varepsilon_{\lambda,scatt}$ .
 Для реакции первого или псевдопервого порядка константа скорости может быть
-записана в виде $k_1=\frac{1}{t}\cdot\ln{\frac{C_0}{C(t)}}=\frac{1}{t}\cdot\ln{\frac{D_0}{D(t)}},$
+записана в виде $k_1=\frac{1}{t}\cdot\ln{\frac{C_0}{C(t)}}=\frac{1}{t}\cdot\ln{\frac{D_0}{D(t)}}$
 где $D_0$ – начальная величина оптической
 плотности, $D(t)$ – ее значение к моменту времени $t$.
 
@@ -155,9 +147,7 @@ D=\lg{\frac{I}{I_0}}=\varepsilon_\lambda Cl
 \[-\lg{f_i}=1,823\cdot10^6(\varepsilon T)^{-\frac{3}{2}}Z_i^2\sqrt{J}.\]
 Преобразуя комбинацию коэффициентов активности в этом выражении с учетом $Z^\#=Z_A+Z_B$, получим окончательно:
 
-\begin{equation}\label{lgkk0}
-\lg{\left(\frac{k}{k_0}\right)}\simeq \underbrace{1,02\cdot Z_AZ_B}_{k_2}\sqrt{J}.
-\end{equation}
+\[\lg{\left(\frac{k}{k_0}\right)}\simeq 1,02\cdot Z_AZ_B\sqrt{J}.\]
 Анализ полученного выражения показывает, что в случае одноименно
 заряженных ионов ($Z_AZ_B > 0$) константа скорости реакции растет с ионной силой, тогда
 как в случае разноименных ($Z_AZ_B < 0$) – уменьшается. Зависимость скорости реакций в
@@ -167,73 +157,27 @@ D=\lg{\frac{I}{I_0}}=\varepsilon_\lambda Cl
 
 \newpage
 \section{Обработка результатов}
-По снятому спектру определяем оптимальную для дальнейших измерений длину волны - 640 нм. После этого снимаем зависимость оптической плотности $D$ от времени на длине волны $\lambda=640$ нм  и постоянными ионной силой $J=const$ (рисунок \ref{'J=const'}) и концентрацией $C=const$~(рисунок \ref{'C=const'})
 
-\begin{figure}[h!]
+
+\begin{figure}[h]
 	\centering
-	\caption{$D=f(t)|_{J=const}$}\label{'J=const'}
-	\includegraphics[width=0.7\textwidth]{Figure_1.png}
+	\caption{}
+%	\includegraphics[width=1\textwidth]{.png}
 \end{figure}
-
-\begin{figure}[h!]
-	\centering
-	\caption{$D=f(t)|_{C=const}$}\label{'C=const'}
-	\includegraphics[width=0.7\textwidth]{Figure_2.png}
-\end{figure}
-
 \newpage
-\section*{$J=const$}
-Так как $[\text{OH}^-]\gg[\text{P}^{2-}]$, то $[\text{OH}^-]\approx[\text{OH}^-]_0$, и закон действующих масс можно переписать в виде:
-\[w=-\frac{d [\text{P}^{2-}]}{d t}=\chi\cdot[\text{P}^{2-}]^m,\] 
-где $\chi=k[\text{OH}^-]^n.$
-Тогда $[\text{P}^{2-}]=[\text{P}^{2-}]_0 \cdot e^{-kt}$
 
-Построим графики в координатах $\ln{D}=f(t)$ (рисунок \ref{'lnD'})
-\begin{figure}[h!]
+\begin{figure}[t]
 	\centering
-	\caption{}\label{'lnD'}
-	\includegraphics[width=0.8\textwidth]{image003.png}
+	\caption{}
+%	\includegraphics[width=1\textwidth]{.png}
 \end{figure}
-
-Из линейности графиков и закона Бугера-Ламберта-Бера (\ref{Buger}) вытекает линейная зависимость $\ln{[\text{P}^{2-}]}$ от времени, или $w=f([\text{P}^{2-}]^1),$ т.е. $m=1$.
-
-Построим графики зависимости угловых коэффициентов $\frac{d\ln{D}}{d t}$ от концентрации щелочи $[\text{OH}^-]$ (рисунок \ref{'C(OH)'}). Получили линейную зависимость.
 
 \begin{figure}[h!]
 	\centering
-	\caption{}\label{'C(OH)'}
-	\includegraphics[width=0.7\textwidth]{image005.png}
+	\caption{}
+%	\includegraphics[width=1\textwidth]{.png}
 \end{figure}
-
-Порядок реакции по малахитовому зеленому: $m=1$;
-по $[\text{OH}^-]$: $n=1$
-
-Константа скорости $k=0.462\text{M}^{-1}\text{c}^{-1}$
-
-
-
-\newpage
-\section*{$C=const$}
-В этой части работы мы поддерживаем концентрации щелочи и красителя постоянными, но меняем ионную силу раствора путём добавления $HCl$ разной концентрации. График зависимости оптической плотности от времени приведён на рисунке \ref{'C=const'}.
-Строим графики в координатах $\ln{D} \-- t$ (рисунок \ref{'lnD2'}).
-\begin{figure}[h!]
-	\centering
-	\caption{}\label{'lnD2'}\includegraphics[width=0.8\textwidth]{1.jpg}
-\end{figure}
-\\
-Построим графики зависимости углового коэффициента $\frac{d\ln{D}}{d t}$ от корня из ионной силы $\sqrt{J}$ (рисунок \ref{sqrtJ}).
-\begin{figure}[h!]
-	\centering
-	\caption{}\label{sqrtJ}
-	\includegraphics[width=0.8\textwidth]{image006.png}
-\end{figure}
-%$Z_AZ_B<0 \Rightarrow $ частицы разноименны
-\\
-По наклону графика определяем $k_2$ из формулы \ref{lgkk0}:\\
-$k_2=1,02\cdot Z_AZ_B=-0,60$
 
 \newpage
 \section{Вывод}
-Мы изучили спектрофотометрический метод нахождения зависимости константы реакции от концентрации веществ и ионной силы раствора и на основе измерений получили порядки реакции (первый порядок по обоим реагентам) и вышеприведенные значения константы скорости.
-
 \end{document}

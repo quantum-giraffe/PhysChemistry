@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.1)  11 MAY 2018 00:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.1)  8 MAY 2018 20:53
 entering extended mode
-**./Обесцвечивание_красителей.tex
-(Обесцвечивание_красителей.tex
+**./Шаблон.tex
+(Шаблон.tex
 LaTeX2e <2017-04-15>
 Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
 
@@ -1450,14 +1450,14 @@ stry (CN)
 \mhchem@option@minusmathsidebearingright=\dimen284
 \mhchem@option@minustextsidebearingleft=\dimen285
 \mhchem@option@minustextsidebearingright=\dimen286
-) (Обесцвечивание_красителей.aux
+) (Шаблон.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 5.
 
 ("C:\Users\Anatoliy\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmr
 .fd"
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
-\openout1 = `Обесцвечивание_красителей.aux'.
+\openout1 = `Шаблон.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -1681,83 +1681,30 @@ Package pdftex.def Info: logo.jpg  used on input line 77.
  [1
 
 {C:/Users/Anatoliy/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo.j
-pg>]
+pg>] [2
 
-LaTeX Warning: Command \CYRT invalid in math mode on input line 138.
-
-Missing character: There is no � in font cmr12!
-[2
-
-] [3]
-<Figure_1.png, id=30, 462.528pt x 346.896pt>
-File: Figure_1.png Graphic file (type png)
-<use Figure_1.png>
-Package pdftex.def Info: Figure_1.png  used on input line 175.
-(pdftex.def)             Requested size: 346.55307pt x 259.92786pt.
-<Figure_2.png, id=32, 462.528pt x 346.896pt>
-File: Figure_2.png Graphic file (type png)
-<use Figure_2.png>
-Package pdftex.def Info: Figure_2.png  used on input line 181.
-(pdftex.def)             Requested size: 346.55307pt x 259.92786pt.
- [4 <./Figure_1.png> <./Figure_2.png>]
-<image003.png, id=38, 569.0058pt x 341.5962pt>
-File: image003.png Graphic file (type png)
-<use image003.png>
-Package pdftex.def Info: image003.png  used on input line 195.
-(pdftex.def)             Requested size: 396.06389pt x 237.77092pt.
-<image005.png, id=39, 366.6498pt x 214.8828pt>
-File: image005.png Graphic file (type png)
-<use image005.png>
-Package pdftex.def Info: image005.png  used on input line 205.
-(pdftex.def)             Requested size: 346.55307pt x 203.11777pt.
- [5 <./image003.png> <./image005.png>]
-<1.jpg, id=46, 916.42375pt x 521.95pt>
-File: 1.jpg Graphic file (type jpg)
-<use 1.jpg>
-Package pdftex.def Info: 1.jpg  used on input line 221.
-(pdftex.def)             Requested size: 396.06389pt x 225.58098pt.
-<image006.png, id=47, 362.7954pt x 218.2554pt>
-File: image006.png Graphic file (type png)
-<use image006.png>
-Package pdftex.def Info: image006.png  used on input line 228.
-(pdftex.def)             Requested size: 396.06389pt x 238.27664pt.
- [6 <./1.jpg> <./image006.png>] [7]
-(Обесцвечивание_красителей.aux) ) 
+] [3] [4] [5] (Шаблон.aux) ) 
 Here is how much of TeX's memory you used:
- 20214 strings out of 493303
- 388680 string characters out of 3128480
- 562363 words of memory out of 3000000
- 23462 multiletter control sequences out of 15000+200000
- 552111 words of font info for 78 fonts, out of 3000000 for 9000
+ 20148 strings out of 493303
+ 387267 string characters out of 3128480
+ 557188 words of memory out of 3000000
+ 23410 multiletter control sequences out of 15000+200000
+ 546455 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,8n,77p,10425b,536s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Anatoliy\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0800.pk> <C:\Users\
-Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk>
- <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\l
-arm1200.pk> <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t
-2a\dpi600\labx1728.pk> <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\lh\lh-t2a\dpi600\larm1440.pk> <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\lh\lh-t2a\dpi600\lati1440.pk> <C:\Users\Anatoliy\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk> <C:\Users\Anatoliy\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lacc1440.pk> <C:\Users\An
-atoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lacc1728.pk> <
-C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lac
-c2074.pk><C:/Users/Anatoliy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb><C:/Users/Anatoliy/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Anatoliy/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Anatoliy/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
-s/Anatoliy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-17.pfb><C:/Users/Anatoliy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><C:/Users/Anatoliy/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Anatoliy/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Anatoliy/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Обесцвечивание_красителей.pdf (7 page
-s, 463786 bytes).
+ 49i,5n,77p,10388b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1200.pk> <C:\Users\Anatoliy\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1728.pk> <C:\Users\Anatoliy\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1440.pk> <C:\Users\A
+natoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1440.pk> 
+<C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\la
+bx2488.pk> <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2
+a\dpi600\lacc1440.pk> <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\lh\lh-t2a\dpi600\lacc1728.pk> <C:\Users\Anatoliy\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\lh\lh-t2a\dpi600\lacc2074.pk>
+Output written on Шаблон.pdf (5 pages, 131854 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
+ 186 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

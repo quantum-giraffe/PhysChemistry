@@ -4,6 +4,7 @@
 \usepackage[english, russian]{babel}
 \usepackage{graphicx}
 \usepackage[hcentering, bindingoffset = 10mm, right = 13 mm, left = 13 mm, top=20mm, bottom = 20 mm]{geometry}
+\usepackage{multirow}
 \usepackage{lipsum}
 \usepackage{amsmath, amstext}
 \usepackage{siunitx}
@@ -16,12 +17,11 @@
 \usepackage{icomma}
 \usepackage{xcolor}
 \usepackage{ctable}
-\usepackage{multirow}
 \usepackage{amssymb}
 \usepackage[version=4]{mhchem}
 \usepackage{expl3}
 \usepackage{calc}
-\usepackage{amsmath}
+
 
 \newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
  
@@ -36,7 +36,7 @@
 %	HEADING SECTIONS
 %----------------------------------------------------------------------------------------
 
-\textsc{\LARGE Московский Физико-Технический Институт}\\[1,5cm] % Name of your university/college
+\textsc{\LARGE Московский физико-технический институт\\(государственный университет)}\\[1,5cm] % Name of your university/college
 \textsc{\Large Департамент молекулярной и биологической физики}\\[2cm] % Major heading such as course name
 \textsc{\large Лабораторная работа}\\[0.5cm] % Minor heading such as course title
 
@@ -76,12 +76,14 @@
 	\begin{center}
 		\includegraphics[width = 80 mm]{logo.jpg}
 	\end{center}
-	{\large \today}
+	{\large г. Долгопрудный\\2018 г.}
 
 \end{bottompar}
 \vfill % Fill the rest of the page with whitespace
 
 \end{titlepage}
+
+\setcounter{page}{2}
 
 \newpage
 \section{Цели работы}
@@ -148,10 +150,10 @@ a_i = c_i \cdot \gamma_i
 \[\gamma_\pm^{\nu_++\nu_-}= \gamma_+^{\nu_+}\gamma_-^{\nu_-}.\]
 Таким образом, в первом приближении теории Дебая-
 Хюккеля $(I<0.01M)$: 
-\[\lg{\gamma_\pm} = -0.51\vert z_+z_-\vert \sqrt{I}.\] 
-Во втором приближении $(I<0.1M)$ учитывается то, что центры ионов не могут приближаться друг к другу на расстояние меньше некоторого a: \[\lg{\gamma_\pm} = -0.51\vert z_+z_-\vert\left( \frac{\sqrt{I}}{1+\sqrt{I}}\right).\]
+\[\lg{\gamma_\pm} = -0,51\vert z_+z_-\vert \sqrt{I}.\] 
+Во втором приближении $(I<0.1M)$ учитывается то, что центры ионов не могут приближаться друг к другу на расстояние меньше некоторого a: \[\lg{\gamma_\pm} = -0,51\vert z_+z_-\vert\left( \frac{\sqrt{I}}{1+\sqrt{I}}\right).\]
 Третье приближение рассматривает более широкий диапозон концентраций: 
-\[\lg{\gamma_\pm} = -0.51\vert z_+z_-\vert \left(\frac{\sqrt{I}}{1+\sqrt{I}}-0.2I\right).\]
+\[\lg{\gamma_\pm} = -0,51\vert z_+z_-\vert \left(\frac{\sqrt{I}}{1+\sqrt{I}}-0.2I\right).\]
 Величина водородного потенциала $pH$ определяется активностью ионов
 водорода в растворе:
 \begin{equation}
@@ -183,35 +185,72 @@ AgCl_{(s)} + e^- \rightleftarrows  Ag_s^0 + Cl_{sol}^-
 \newpage
 \section{Обработка результатов}
 \subsection{Исследование влияние ионной силы на растворимость труднорастворимой соли}
-В ходе опыта измерили значение электропроводности для ряда растворов, данные представлены в таблице 1:
+В ходе опыта измерили значение электропроводности для ряда растворов, данные представлены в таблице \ref{data}\\
+
+\begin{table}[h]
+	\centering
+	\caption{} \label{data}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		&\ce{[H2O]}&\ce{[KCl]}&\ce{[Na2SO4]}\\
+		\hline
+		\ce{[Ca^{2+}]}&$7,58\cdot 10^{-3}$ & $7,75\cdot 10^{-3}$ & $6,11\cdot 10^{-3}$\\
+		\hline
+		\ce{[SO4^{2-}]}&$7,58 \cdot 10^{-3}$ & $7,75\cdot 10^{-3}$ & $7,11 \cdot 10^{-3}$\\
+		\hline
+		\ce{[K+]}& -- & $0,01$ & -- \\
+		\hline
+		\ce{[Cl-]}& -- & $0,01$ & -- \\
+		\hline
+		\ce{[Na+]}& -- & -- & $0,02$ \\
+		\hline
+		$J$& $3,03\cdot 10^{-2}$ & $0,041$ & $0,0364$ \\
+		\hline
+	\end{tabular}
+\end{table}
 
 
 \begin{enumerate}
-\item Оценим вклад электропроводности СaSO4 в присутствии солей хлорида калия и сульфата натрия:
+\item Оценим вклад электропроводности \ce{CaSO4} в присутствии солей хлорида калия и сульфата натрия:
+\begin{equation}\varkappa_{\ce{CaSO_4}} = \varkappa - \varkappa_{\ce{KCl}} - \varkappa_{\ce{H2O}}
+\end{equation}
 
-\[x_{\ce{CaSO_4}} = x - x_{\ce{KCl}} - x_{\ce{H2O}}\]
+$$
+\begin{array}{rcl}
+\varkappa_{\ce{(CaSO4)}}& = & 2190\frac{\text{мкCм}}{\text{см}}\\
+\varkappa_{\ce{(KCl)}}& = & 1390\frac{\text{мкCм}}{\text{см}}\\\varkappa_{\ce{(Na2SO4)}}& = & 1074\frac{\text{мкCм}}{\text{см}}\\\varkappa_{\ce{(CaSO4 + KCl)}}& = & 3550\frac{\text{мкCм}}{\text{см}}\\\varkappa_{\ce{(CaSO4 + Na2SO4)}}& = & 2780\frac{\text{мкCм}}{\text{см}}\\
+\end{array}
+$$
+
+
 
 В присутствии \ce{KCl} : 2156,56 мкСм/cм
 
 В присутствии \ce{Na2SO4}: 1702,56 мкСм/cм
 
-\item Найдем концентрации ионов \ce{Ca^{2+}} \ce{SO4^{2-}} в присутствие и в отсутствие других солей:
+\item Найдем концентрации ионов \ce{Ca^{2+}} \ce{SO4^{2-}} в присутствии и в отсутствие других солей:
 
-Учитывая, что $\frac{1}{2} \lambda_{\ce{Ca^2+}} = 59.5  \frac{\text{Cм}\cdot\text{см}^2}{\text{моль}} \frac{1}{2} \lambda_{\ce{SO4^2-}} = 79.8 \frac{\text{Cм}\cdot \text{см}^2}{\text{моль}}$:
-
-\[C\cdot \lambda = x\]
+Учитывая, что $\frac{1}{2} \lambda_{\ce{Ca^2+}} = 59,5  \frac{\text{Cм}\cdot\text{см}^2}{\text{моль}} \frac{1}{2} \lambda_{\ce{SO4^2-}} = 79,8 \frac{\text{Cм}\cdot \text{см}^2}{\text{моль}}$:
+\[2\cdot C\cdot \lambda = \varkappa\]
 
 Тогда : 
-\[C = \frac{x}{\left( \frac{1}{2} \lambda_{\ce{Ca^2+}} +\frac{1}{2} \lambda_{\ce{SO4^2-}} \right)}\]
+\[C = \frac{\varkappa}{\left( \lambda_{\ce{Ca^2+}} + \lambda_{\ce{SO4^2-}} \right)}\]
 
 Чтобы рассчитать произведение растворимости для начала нужно найти коэффициенты активности по формуле:
+\begin{equation}
+\lg{\gamma_i} = -0,51 z_i^2\cdot \sqrt{I}
+\end{equation}
 
-\[\lg{\gamma_i} = -0,51 z_i^2\cdot \sqrt{I}\]
-\[\gamma_{\ce{H2O}}= 0.299;\]
-\[\gamma_{\ce{KCl}}= 0.267;\]
-\[\gamma_{\ce{Na2SO4}}=0.28\]
+$$
+\begin{array}{rclcrcl}
+\gamma_{\ce{H2O}}& = & 0,441&\hspace{4cm}& \text{ПР}_{\ce{CaSo4}} & = & 2,5\cdot 10^{-5};\\
+\gamma_{\ce{KCl}} & = & 0,387&\hspace{4cm}&\text{ПР}_{\ce{CaSo4}} & = & 2,3\cdot 10^{-5}; \\
+\gamma_{\ce{Na2SO4}} & = & 0,364&\hspace{4cm}&\text{ПР}_{\ce{CaSo4}} & = &1,5\cdot 10^{-5}
+\end{array}
+$$
 
-\[\text{ПР}_{\ce{CaSo4}}=2.2\cdot 10^{-5}; 1.71\cdot 10^{-5}; 1.17\cdot 10^{-5}\]
+
+
 
 Сульфат натрия понижает значение ПР и ухудшает растворимость сульфата кальция в воде.
 
@@ -247,11 +286,11 @@ AgCl_{(s)} + e^- \rightleftarrows  Ag_s^0 + Cl_{sol}^-
 \includegraphics[width=0.8\textwidth]{image005.png}
 \end{figure}
 \end{enumerate}
-Линейной экстраполяцией графика находим $E_0 = 364.4 \text{мВ}$
+Линейной экстраполяцией графика находим $E_0 = 364,4 \text{мВ}$
 
 Построим график зависимости
 
-$Y = E - 0.1183\lg{C_{HCl}} + 0.059 \frac{\sqrt{C_{HCl}}}{\sqrt{1+ C_{HCl}}}$ от $C_{HCl}$\\
+$Y = E - 0.1183\lg{C_{HCl}} + 0,059 \frac{\sqrt{C_{HCl}}}{\sqrt{1+ C_{HCl}}}$ от $C_{HCl}$\\
 
 \begin{figure}[h!]
 	\centering
@@ -270,13 +309,13 @@ $Y = E - 0.1183\lg{C_{HCl}} + 0.059 \frac{\sqrt{C_{HCl}}}{\sqrt{1+ C_{HCl}}}$ о
 
 \begin{figure}[t]
 	\centering
-	\caption{}
+	\caption{Зависимость ЭДС, измеренной с помощью 1го и 2го pH-метра, от pH}
 \includegraphics[width=1\textwidth]{image015.png}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\caption{}
+	\caption{Зависимость разницы ЭДС, измеренной в серии растворов с катионами и без них}
 \includegraphics[width=1\textwidth]{image017.png}
 \end{figure}
 
